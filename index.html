@@ -1015,6 +1015,7 @@
         align-items: center;
         font-weight: 500;
         transition: all 0.3s ease;
+				gap: 10px;
       }
 
       .faq-question:hover {
@@ -1319,7 +1320,7 @@
       /* Responsive */
       @media (max-width: 1024px) {
         .about-content {
-          flex-direction: column;
+					grid-template-columns: 1fr;
         }
 
         .achievements-grid {
@@ -1435,6 +1436,11 @@
           font-size: 2rem;
         }
 
+				.contact-info h3 {
+					font-size: 1.6rem;
+					text-align: center;
+				}
+
         .hero-btns {
           flex-direction: column;
         }
@@ -1454,7 +1460,33 @@
         .footer-content {
           grid-template-columns: 1fr;
         }
+
+				.contact-form {
+					padding: 10px 0;
+				}
+
+				footer {
+					padding-top: 20px;
+				}
+
+				section {
+					padding: 20px 0;
+				}
+
+				.partners {
+					padding: 20px 0;
+				}
+
+				.logo > img {
+					height: 35px;
+				}
       }
+
+			@media screen and (max-width: 400px) {
+				.contact-info h3 {
+					font-size: 1.6rem;
+				}
+			}
     </style>
   </head>
   <body>
@@ -1805,7 +1837,7 @@
             </p>
             <p>
               Ваши отзывы помогают нам становиться лучше и развивать культурную
-              жизнь нашего с..
+              жизнь нашего города.
             </p>
             <a href="https://bus.gov.ru/rate/294322" class="btn" target="_blank"
               >Оставить отзыв</a
@@ -1966,7 +1998,7 @@
               <h3>День молодежи</h3>
               <p>
                 Праздничная программа с конкурсами, концертом и дискотекой для
-                молодежи с..
+                молодежи.
               </p>
               <div class="event-meta">
                 <span><i class="far fa-clock"></i> 16:00</span>
@@ -2073,104 +2105,6 @@
                 свидетельства о рождении ребенка (для детских кружков).
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About - обновленный дизайн -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>О нашем доме культуры</h2>
-          <p>
-            Муниципальное казенное учреждение культуры «Дом культуры с. Орловка»
-            Кировского муниципального округа Ставропольского края
-          </p>
-        </div>
-        <div class="about-content">
-          <div class="about-text">
-            <h3>Мы создаем атмосферу творчества и досуга</h3>
-            <p>
-              Дом культуры с. Орловка - это современное учреждение, где
-              сохраняются традиции и создаются новые культурные ценности. Наша
-              деятельность направлена на организацию содержательного досуга
-              жителей всех возрастов.
-            </p>
-            <p>
-              Мы предлагаем разнообразные кружки и клубные формирования,
-              проводим праздники, концерты, выставки и другие культурные
-              мероприятия, способствующие развитию творческого потенциала наших
-              земляков.
-            </p>
-
-            <div class="about-features">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fas fa-users"></i>
-                </div>
-                <div class="feature-text">
-                  <h4>15+ кружков</h4>
-                  <p>Для детей и взрослых по различным направлениям</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fas fa-calendar-alt"></i>
-                </div>
-                <div class="feature-text">
-                  <h4>50+ мероприятий</h4>
-                  <p>Ежегодно проводим культурные события</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fas fa-trophy"></i>
-                </div>
-                <div class="feature-text">
-                  <h4>Победители</h4>
-                  <p>Регулярные победы в конкурсах и фестивалях</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="feature-text">
-                  <h4>Бесплатно</h4>
-                  <p>Все занятия проводятся бесплатно</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- График работы - новый блок -->
-            <div class="schedule">
-              <h4><i class="far fa-clock"></i> Режим работы</h4>
-              <div class="schedule-grid">
-                <div class="schedule-item">
-                  <span class="schedule-day">Понедельник - Пятница</span>
-                  <span class="schedule-time">09:00 - 21:00</span>
-                </div>
-                <div class="schedule-item">
-                  <span class="schedule-day">Суббота</span>
-                  <span class="schedule-time">10:00 - 18:00</span>
-                </div>
-                <div class="schedule-item">
-                  <span class="schedule-day">Воскресенье</span>
-                  <span class="schedule-time">Выходной</span>
-                </div>
-                <div class="schedule-item">
-                  <span class="schedule-day">Обеденный перерыв</span>
-                  <span class="schedule-time">13:00 - 14:00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-image">
-            <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-              alt="Дом культуры с. Орловка"
-            />
           </div>
         </div>
       </div>
