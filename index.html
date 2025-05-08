@@ -242,280 +242,7 @@
         height: calc(100vh - 80px);
         min-height: 500px;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-          url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
-            no-repeat center center/cover;
-        display: flex;
-        align-items: center;
-        color: white;
-        position: relative;
-      }
-
-      .hero-content {
-        max-width: 800px;
-        animation: fadeInUp 1s ease;
-        padding: 0 20px;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        line-height: 1.2;
-      }
-
-      .hero p {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
-        opacity: 0.9;
-      }
-
-      .hero-btns {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-
-      .hero-btns .btn {
-        padding: 15px 35px;
-      }
-
-      .hero-btns .btn-outline {
-        background: transparent;
-        border: 2px solid white;
-        color: white;
-      }
-
-      .hero-btns .btn-outline:hover {
-        background: white;
-        color: var(--primary);
-      }
-
-      .hero-social {
-        position: absolute;
-        left: 40px;
-        bottom: 40px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .hero-social a {
-        color: white;
-        font-size: 1.2rem;
-        transition: all 0.3s ease;
-      }
-
-      .hero-social a:hover {
-        color: var(--secondary);
-        transform: translateY(-3px);
-      }
-
-      .hero-scroll {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-        color: white;
-        animation: bounce 2s infinite;
-      }
-
-      /* About */
-      .about {
-        background-color: white;
-      }
-
-      .about-content {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-      }
-
-      .about-text {
-        flex: 1;
-      }
-
-      .about-text h3 {
-        font-size: 1.8rem;
-        color: var(--primary);
-        margin-bottom: 20px;
-      }
-
-      .about-text p {
-        margin-bottom: 20px;
-      }
-
-      .about-features {
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-
-      .feature-item {
-        display: flex;
-        gap: 15px;
-      }
-
-      .feature-icon {
-        width: 50px;
-        height: 50px;
-        background: var(--primary);
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-        flex-shrink: 0;
-      }
-
-      .feature-text h4 {
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-        color: var(--dark);
-      }
-
-      .about-image {
-        flex: 1;
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      }
-
-      .about-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.5s ease;
-      }
-
-      .about-image:hover img {
-        transform: scale(1.05);
-      }
-
-      /* News Slider */
-      .news {
-        background-color: var(--light);
-      }
-
-      .slider-container {
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
-      }
-
-      .slider {
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-      }
-
-      .slider-track {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
-
-      .slide {
-        min-width: 100%;
-        position: relative;
-      }
-
-      .slide img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-      }
-
-      .slide-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-        padding: 30px;
-        color: white;
-      }
-
-      .slide-content h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-      }
-
-      .slide-content p {
-        opacity: 0.9;
-        margin-bottom: 15px;
-      }
-
-      .slide-date {
-        display: inline-block;
-        background: var(--secondary);
-        color: white;
-        padding: 5px 15px;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-      }
-
-      .slider-nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        gap: 10px;
-      }
-
-      .slider-dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: var(--gray);
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      .slider-dot.active {
-        background: var(--primary);
-        transform: scale(1.2);
-      }
-
-      .slider-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--primary);
-        font-size: 1.2rem;
-        cursor: pointer;
-        z-index: 10;
-        transition: all 0.3s ease;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .slider-arrow:hover {
-        background: white;
-        color: var(--primary-light);
-      }
-
-      .slider-prev {
-        left: -25px;
-      }
-
-      .slider-next {
-        right: -25px;
-      }
-
-      .hero {
-        height: calc(100vh - 80px);
-        min-height: 500px;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-          url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+          url("./back.jpg")
             no-repeat center center/cover;
         display: flex;
         align-items: center;
@@ -524,11 +251,21 @@
         text-align: center;
       }
 
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        z-index: 1;
+      }
+
       .hero-content {
-        max-width: 800px;
-        animation: fadeInUp 1s ease;
-        padding: 0 20px;
-        margin: 0 auto;
+        position: relative;
+        z-index: 2;
       }
 
       .hero h1 {
@@ -576,6 +313,7 @@
         z-index: 2;
         color: white;
         animation: bounce 2s infinite;
+				font-size: 32px;
       }
 
       /* About - обновленный дизайн */
@@ -909,17 +647,17 @@
       .partners-container {
         width: 100%;
         overflow: hidden;
+        position: relative;
       }
 
       .partners-track {
         display: flex;
         width: max-content;
-        animation: scroll 30s linear infinite;
       }
 
       .partner-logo {
         flex: 0 0 180px;
-        height: 100px;
+        height: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -932,7 +670,7 @@
 
       .partner-logo img {
         max-width: 100%;
-        max-height: 60px;
+        max-height: 100px;
         object-fit: contain;
         filter: grayscale(100%);
         opacity: 0.7;
@@ -944,13 +682,8 @@
         opacity: 1;
       }
 
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
+      .partners-track:hover {
+        animation-play-state: paused;
       }
 
       /* Затемнение краев для плавного перехода */
@@ -1487,6 +1220,128 @@
 					font-size: 1.6rem;
 				}
 			}
+
+      /* News Slider */
+      .news {
+        background-color: var(--light);
+      }
+
+      .slider-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .slider {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .slider-track {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide {
+        min-width: 100%;
+        position: relative;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      .slide-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        padding: 30px;
+        color: white;
+      }
+
+      .slide-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .slide-content p {
+        opacity: 0.9;
+        margin-bottom: 15px;
+      }
+
+      .slide-date {
+        display: inline-block;
+        background: var(--secondary);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .slider-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+      }
+
+      .slider-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gray);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .slider-dot.active {
+        background: var(--primary);
+        transform: scale(1.2);
+      }
+
+      .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        font-size: 1.2rem;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .slider-arrow:hover {
+        background: white;
+        color: var(--primary-light);
+      }
+
+      .slider-prev {
+        left: -25px;
+      }
+
+      .slider-next {
+        right: -25px;
+      }
+
+      @media (max-width: 768px) {
+        .slider-arrow {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1505,9 +1360,9 @@
           <ul>
             <li><a href="#about">О нас</a></li>
             <li><a href="#news">Новости</a></li>
-            <li><a href="#events">Мероприятия</a></li>
             <li><a href="#gallery">Галерея</a></li>
             <li><a href="#feedback">Отзывы</a></li>
+            <!-- <li><a href="#events">Мероприятия</a></li> -->
             <li><a href="#contact">Контакты</a></li>
           </ul>
         </nav>
@@ -1525,9 +1380,9 @@
           <ul>
             <li><a href="#about">О нас</a></li>
             <li><a href="#news">Новости</a></li>
-            <li><a href="#events">Мероприятия</a></li>
             <li><a href="#gallery">Галерея</a></li>
             <li><a href="#feedback">Отзывы</a></li>
+            <!-- <li><a href="#events">Мероприятия</a></li> -->
             <li><a href="#contact">Контакты</a></li>
           </ul>
         </nav>
@@ -1643,47 +1498,41 @@
             <div class="slider-track" id="sliderTrack">
               <div class="slide">
                 <img
-                  src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  src="./i_3.jpg"
                   alt="Новость 1"
                 />
                 <div class="slide-content">
-                  <span class="slide-date">15 июня 2023</span>
-                  <h3>Концерт народного ансамбля "Русские узоры"</h3>
+                  <span class="slide-date">25-04-2025</span>
+                  <h3>Автопробег «Эх, путь дорожка фронтовая»</h3>
                   <p>
-                    Приглашаем всех на юбилейный концерт нашего народного
-                    ансамбля, который состоится 20 июня в 18:00
+                    «Эх, путь дорожка фронтовая» – автопробег по территории Ставрополья в рамках всероссийской акции «Знамя Победы».
                   </p>
-                  <a href="#" class="btn btn-outline">Подробнее</a>
                 </div>
               </div>
               <div class="slide">
                 <img
-                  src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  src="./i_2.jpg"
                   alt="Новость 2"
                 />
                 <div class="slide-content">
-                  <span class="slide-date">10 июня 2023</span>
-                  <h3>Мастер-класс по народным танцам</h3>
+                  <span class="slide-date">26-04-2025</span>
+                  <h3>Акция памяти, посвященная 39-й годовщине Чернобыльской катастрофы</h3>
                   <p>
-                    Приглашаем детей от 7 лет на бесплатный мастер-класс по
-                    народным танцам, который пройдет 15 июня
+                    Состоялась акция памяти, посвященная 39-й годовщине Чернобыльской катастрофы, ужасной трагедии, произошедшей в ночь на 26 апреля 1986 года.
                   </p>
-                  <a href="#" class="btn btn-outline">Подробнее</a>
                 </div>
               </div>
               <div class="slide">
                 <img
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  src="./i.jpg"
                   alt="Новость 3"
                 />
                 <div class="slide-content">
-                  <span class="slide-date">5 июня 2023</span>
-                  <h3>Выставка народного творчества</h3>
+                  <span class="slide-date">25-04-2025</span>
+                  <h3>Акция «Диктант Победы»</h3>
                   <p>
-                    Открытие ежегодной выставки народного творчества "Родные
-                    просторы" состоится 10 июня в 16:00
+                    На площадке Дома культуры с. Орловка прошла международная акция «Диктант Победы», посвящённая событиям Великой Отечественной войны. Участники выполняли задания по различным темам, связанным с историей войны.
                   </p>
-                  <a href="#" class="btn btn-outline">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -1712,30 +1561,27 @@
             <div class="achievement-icon">
               <i class="fas fa-trophy"></i>
             </div>
-            <h3>Гран-при фестиваля</h3>
+            <h3>"Страна чудес"</h3>
             <p>
-              Народный ансамбль "Русские узоры" получил Гран-при на
-              международном фестивале в 2022 году
+              Алфимова Ульяна – Победитель 2 степени за работу «Зимняя игра» в Международном творческом конкурсе "Престиж"
             </p>
           </div>
           <div class="achievement-card">
             <div class="achievement-icon">
               <i class="fas fa-award"></i>
             </div>
-            <h3>Звание "Народный"</h3>
+            <h3>Межрегиональный конкурс "Первый шаг"</h3>
             <p>
-              Наш танцевальный коллектив удостоен звания "Народный
-              самодеятельный коллектив"
+              Коллектив награжден дипломом Лауреата II степени. Поздравляем с успехом и желаем дальнейших творческих достижений!
             </p>
           </div>
           <div class="achievement-card">
             <div class="achievement-icon">
               <i class="fas fa-medal"></i>
             </div>
-            <h3>Победители конкурса</h3>
+            <h3>Онлайн-конкурса «Мой герой»!</h3>
             <p>
-              Вокальная группа "Капель" заняла 1 место на краевом конкурсе в
-              2023 году
+              Поздравляем победителей окружного патриотического онлайн-конкурса «Мой герой» Лим Лилию Викторовну и Зубареву Лилиану Вадимовну
             </p>
           </div>
           <div class="achievement-card">
@@ -1762,57 +1608,51 @@
         <div class="gallery-grid">
           <div class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="./n1.jpeg"
               alt="Мероприятие 1"
             />
-            <div class="gallery-overlay">
-              <h3>Концерт ко Дню Победы</h3>
-            </div>
           </div>
           <div class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="./n2.jpeg"
               alt="Мероприятие 2"
             />
-            <div class="gallery-overlay">
-              <h3>Выставка детского творчества</h3>
-            </div>
           </div>
           <div class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="./n3.jpeg"
               alt="Мероприятие 3"
             />
-            <div class="gallery-overlay">
-              <h3>Фестиваль народной музыки</h3>
-            </div>
           </div>
           <div class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="./n4.jpeg"
               alt="Мероприятие 4"
             />
-            <div class="gallery-overlay">
-              <h3>Танцевальный конкурс</h3>
-            </div>
           </div>
           <div class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="./n5.jpg"
               alt="Мероприятие 5"
             />
-            <div class="gallery-overlay">
-              <h3>Новогодний утренник</h3>
-            </div>
           </div>
           <div class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="./n6.jpg"
               alt="Мероприятие 6"
             />
-            <div class="gallery-overlay">
-              <h3>Мастер-класс по рукоделию</h3>
-            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./n7.jpeg"
+              alt="Мероприятие 7"
+            />
+          </div>
+					<div class="gallery-item">
+            <img
+              src="./n8.jpeg"
+              alt="Мероприятие 6"
+            />
           </div>
         </div>
       </div>
@@ -1845,7 +1685,7 @@
           </div>
           <div class="qr-container">
             <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://bus.gov.ru/rate/294322"
+              src="./qr.jpg"
               alt="QR код для отзыва"
             />
             <p>Отсканируйте QR-код для перехода на страницу отзывов</p>
@@ -1861,85 +1701,47 @@
           <div class="partners-track">
             <!-- Первый набор логотипов -->
             <div class="partner-logo">
-              <img
-                src="./80.png"
-                alt="Партнёр 1"
-              />
+              <img src="./80.png" alt="Партнёр 1" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./gmu.png"
-                alt="Партнёр 2"
-              />
+              <img src="./gmu.png" alt="Партнёр 2" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./gos.png"
-                alt="Партнёр 3"
-              />
+              <img src="./gos.png" alt="Партнёр 3" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./AKGO_SK.png"
-                alt="Партнёр 4"
-              />
+              <img src="./AKGO_SK.png" alt="Партнёр 4" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./min.png"
-                alt="Партнёр 5"
-              />
+              <img src="./min.png" alt="Партнёр 5" />
+            </div>
+            <div class="partner-logo">
+              <img src="./pro.png" alt="Партнёр 6" />
             </div>
 						<div class="partner-logo">
-              <img
-                src="./pro.png"
-                alt="Партнёр 5"
-              />
-            </div>
-            <!-- Повторяем тот же набор для бесшовного перехода -->
-            <div class="partner-logo">
-              <img
-                src="./80.png"
-                alt="Партнёр 1"
-              />
+              <img src="./80.png" alt="Партнёр 1" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./gmu.png"
-                alt="Партнёр 2"
-              />
+              <img src="./gmu.png" alt="Партнёр 2" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./gos.png"
-                alt="Партнёр 3"
-              />
+              <img src="./gos.png" alt="Партнёр 3" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./AKGO_SK.png"
-                alt="Партнёр 4"
-              />
+              <img src="./AKGO_SK.png" alt="Партнёр 4" />
             </div>
             <div class="partner-logo">
-              <img
-                src="./min.png"
-                alt="Партнёр 5"
-              />
+              <img src="./min.png" alt="Партнёр 5" />
             </div>
-						<div class="partner-logo">
-              <img
-                src="./pro.png"
-                alt="Партнёр 5"
-              />
+            <div class="partner-logo">
+              <img src="./pro.png" alt="Партнёр 6" />
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Events -->
-    <section class="events" id="events">
+    <!-- <section class="events" id="events">
       <div class="container">
         <div class="section-title">
           <h2>Ближайшие мероприятия</h2>
@@ -2010,7 +1812,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- FAQ -->
     <section class="faq" id="faq">
@@ -2085,7 +1887,7 @@
                 В нашем доме культуры дети могут заниматься с 5 лет. Для самых
                 маленьких у нас есть развивающие занятия и подготовительные
                 группы. Подробнее о возрастных группах и расписании можно
-                уточнить по телефону 8(879)386-50-46 или у администратора ДК.
+                уточнить по телефону 8 (87938) 65-0-46 или у администратора ДК.
               </p>
             </div>
           </div>
@@ -2100,7 +1902,7 @@
                 Информация о деятельности клубных формированиях размещена на
                 официальном сайте Учреждения и в самом Учреждении на
                 информационном стенде. Запись осуществляется по телефону
-                8(879)386-50-46 или лично у руководителя кружка. Для записи
+                8 (87938) 65-0-46 или лично у руководителя кружка. Для записи
                 потребуется заполнить заявление и предоставить копию
                 свидетельства о рождении ребенка (для детских кружков).
               </p>
@@ -2128,7 +1930,7 @@
               </p>
               <p>
                 <i class="fas fa-phone-alt"></i>
-                <strong>Телефон:</strong> 8(879)386-50-46
+                <strong>Телефон:</strong> 8 (87938) 65-0-46
               </p>
               <p>
                 <i class="fas fa-envelope"></i>
@@ -2136,7 +1938,8 @@
               </p>
               <p>
                 <i class="fas fa-clock"></i> <strong>Часы работы:</strong>
-                <br />Пн-Пт: 9:00-21:00 (обед 13:00-14:00) <br />Сб: 10:00-18:00
+                <br />Пн-Пт: 8:00-16:00 (обед 12:00-13:00) 
+								<br />Сб: выходной
                 <br />Вс: выходной
               </p>
             </div>
@@ -2159,11 +1962,8 @@
               >
                 <i class="fab fa-telegram"></i>
               </a>
-              <a href="#" class="social-link" title="ВКонтакте">
+              <a target="_blank" href="https://vk.com/share.php?url=https%3A%2F%2Fdkorlovka.stv.muzkult.ru%2Fabout&title=МКУК%20«Дом%20культуры%20с.%20Орловка»%20%7C%20Главная&utm_source=share2" class="social-link" title="ВКонтакте">
                 <i class="fab fa-vk"></i>
-              </a>
-              <a href="#" class="social-link" title="YouTube">
-                <i class="fab fa-youtube"></i>
               </a>
             </div>
 
@@ -2241,10 +2041,9 @@
             </p>
             <div class="footer-logo" style="margin-top: 20px;">
               <img
-                src="https://via.placeholder.com/100x50?text=ДК+Орловка"
-                alt="Логотип ДК Орловка"
-                style="max-width: 150px;"
-              />
+								src="./logo.png"
+								alt="Логотип Дома культуры"
+							/>
             </div>
           </div>
           <div class="footer-column">
@@ -2252,20 +2051,10 @@
             <ul>
               <li><a href="#about">О нас</a></li>
               <li><a href="#news">Новости</a></li>
-              <li><a href="#events">Мероприятия</a></li>
               <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#feedback">Отзывы</a></li>
+              <!-- <li><a href="#events">Мероприятия</a></li> -->
               <li><a href="#contact">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Кружки</h3>
-            <ul>
-              <li><a href="#">Танцевальные</a></li>
-              <li><a href="#">Вокальные</a></li>
-              <li><a href="#">Театральные</a></li>
-              <li><a href="#">Декоративно-прикладные</a></li>
-              <li><a href="#">Спортивные</a></li>
-              <li><a href="#">Для пожилых</a></li>
             </ul>
           </div>
           <div class="footer-column">
@@ -2275,21 +2064,20 @@
                 <i class="fas fa-map-marker-alt"></i> с. Орловка, ул.
                 Октябрьская
               </li>
-              <li><i class="fas fa-phone-alt"></i> 8(879)386-50-46</li>
+              <li><i class="fas fa-phone-alt"></i> 8 (87938) 65-0-46</li>
               <li><i class="fas fa-envelope"></i> dk-orlovka@mail.ru</li>
               <li>
                 <i class="fas fa-clock"></i> Пн-Пт: 9:00-21:00, Сб: 10:00-18:00
               </li>
             </ul>
             <div class="footer-social" style="margin-top: 20px;">
-              <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-              <a href="#" class="social-link"
+              <a target="_blank" href="https://vk.com/share.php?url=https%3A%2F%2Fdkorlovka.stv.muzkult.ru%2Fabout&title=МКУК%20«Дом%20культуры%20с.%20Орловка»%20%7C%20Главная&utm_source=share2" class="social-link"><i class="fab fa-vk"></i></a>
+              <a href="https://ok.ru/group/52943573680357" class="social-link" target="_blank"
                 ><i class="fab fa-odnoklassniki"></i
               ></a>
-              <a href="#" class="social-link"
+              <a href="https://t.me/dkorlovka_kgosk" class="social-link" target="_blank"
                 ><i class="fab fa-telegram"></i
               ></a>
-              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
@@ -2298,10 +2086,6 @@
             <p>
               &copy; 2023 МКУК "Дом культуры с. Орловка". Все права защищены.
             </p>
-          </div>
-          <div class="footer-links">
-            <a href="#">Политика конфиденциальности</a>
-            <a href="#">Пользовательское соглашение</a>
           </div>
         </div>
       </div>
@@ -2355,16 +2139,25 @@
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
 
-          if (this.getAttribute("href") === "#") return;
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
 
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            // Close mobile nav if open
-            mainNav.classList.remove("active");
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Закрываем мобильное меню если оно открыто
+            mobileNav.classList.remove("active");
+            document.body.style.overflow = "";
 
+            // Получаем высоту хедера
+            const headerHeight = document.getElementById("header").offsetHeight;
+            
+            // Вычисляем позицию для прокрутки с учетом высоты хедера
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+            // Плавная прокрутка к элементу
             window.scrollTo({
-              top: target.offsetTop - 80,
-              behavior: "smooth",
+              top: targetPosition,
+              behavior: "smooth"
             });
           }
         });
@@ -2389,17 +2182,34 @@
         currentSlide = index;
       }
 
+      // Initialize slider
+      goToSlide(0);
+
+      // Event listeners for dots
       dots.forEach((dot, index) => {
         dot.addEventListener("click", () => goToSlide(index));
       });
 
+      // Event listeners for arrows
       prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
       nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
 
       // Auto slide change
-      setInterval(() => {
+      let slideInterval = setInterval(() => {
         goToSlide(currentSlide + 1);
       }, 5000);
+
+      // Pause auto slide on hover
+      const slider = document.querySelector(".slider");
+      slider.addEventListener("mouseenter", () => {
+        clearInterval(slideInterval);
+      });
+
+      slider.addEventListener("mouseleave", () => {
+        slideInterval = setInterval(() => {
+          goToSlide(currentSlide + 1);
+        }, 5000);
+      });
 
       // FAQ accordion
       const faqItems = document.querySelectorAll(".faq-item");
@@ -2475,19 +2285,72 @@
       window.addEventListener("scroll", animateOnScroll);
 
       // Partners slider animation
-      const partnersSlider = document.querySelector(".partners-slider");
-      let partnersScrollPos = 0;
+      const partnersTrack = document.querySelector(".partners-track");
+      const partnersContainer = document.querySelector(".partners-container");
+      
+      // Сохраняем оригинальный набор логотипов
+      const originalLogos = partnersTrack.innerHTML;
+      partnersTrack.innerHTML = originalLogos + originalLogos;
 
-      function animatePartnersSlider() {
-        partnersScrollPos -= 1;
-        if (partnersScrollPos < -partnersSlider.scrollWidth / 2) {
-          partnersScrollPos = 0;
+      let scrollPos = 0;
+      const scrollSpeed = 2;
+      let isHovered = false;
+      let animationFrame;
+      let currentIndex = 0;
+
+      // Получаем точные размеры первого логотипа
+      const firstLogo = partnersTrack.firstElementChild;
+      const logoStyle = window.getComputedStyle(firstLogo);
+      const logoWidth = firstLogo.offsetWidth;
+      const logoMargin = parseInt(logoStyle.marginRight);
+      const totalLogoWidth = logoWidth + logoMargin;
+
+      // Создаем временный контейнер для хранения оригинальных логотипов
+      const tempContainer = document.createElement('div');
+      tempContainer.innerHTML = originalLogos;
+      const originalLogosArray = Array.from(tempContainer.children);
+
+      function animate() {
+        if (!isHovered) {
+          scrollPos += scrollSpeed;
+          
+          // Если первый логотип полностью вышел из видимой области
+          if (scrollPos >= totalLogoWidth) {
+            // Сохраняем текущую позицию
+            const currentPos = scrollPos;
+            
+            // Удаляем первый логотип
+            const firstLogo = partnersTrack.firstElementChild;
+            firstLogo.remove();
+            
+            // Добавляем следующий логотип из оригинального набора
+            const nextLogo = originalLogosArray[currentIndex].cloneNode(true);
+            partnersTrack.appendChild(nextLogo);
+            
+            // Обновляем индекс для следующего логотипа
+            currentIndex = (currentIndex + 1) % originalLogosArray.length;
+            
+            // Корректируем позицию скролла
+            scrollPos = currentPos - totalLogoWidth;
+          }
+          
+          partnersTrack.style.transform = `translateX(-${scrollPos}px)`;
         }
-        partnersSlider.style.transform = `translateX(${partnersScrollPos}px)`;
-        requestAnimationFrame(animatePartnersSlider);
+        animationFrame = requestAnimationFrame(animate);
       }
 
-      animatePartnersSlider();
+      // Запускаем анимацию
+      animate();
+
+      // Останавливаем при наведении
+      partnersContainer.addEventListener('mouseenter', () => {
+        isHovered = true;
+      });
+
+      // Возобновляем при уходе мыши
+      partnersContainer.addEventListener('mouseleave', () => {
+        isHovered = false;
+      });
     </script>
   </body>
 </html>
